@@ -28,27 +28,14 @@ Project ini dibagi menjadi dua bagian sesuai instruksi praktikum:
 
 ---
 
-## 🛠️ Cara Menjalankan Project (React Vite)
+🛠️ Cara Menjalankan Project (React Vite)
+Bagi Dosen atau Teman-Teman yang ingin mengeksekusi project React ini di komputer lokal, silakan ikuti langkah-langkah berikut:
 
-Bagi asisten praktikum atau dosen yang ingin mengeksekusi project React ini di komputer lokal, silakan ikuti langkah-langkah berikut:
-
-1. Buka terminal dan masuk ke direktori React:
-   bash
-   cd praktikum-react
-
-2. Install semua dependencies (pastikan Node.js sudah terpasang):
-Bash
-npm install
-   cd praktikum-react
-   
-3. Jalankan development server:
-Bash
-npm run dev
-
-4. Buka browser dan akses URL lokal yang muncul di terminal http://localhost:517
-   
-*Status:* Project ini telah diverifikasi oleh Ketua Kelompok dan siap untuk dikumpulkan. (Sofyan Muzakki - 28/03/2026)3/
-
+1. Masuk ke direktori project React: cd praktikum-react
+2. Install semua dependencies (pastikan Node.js sudah terpasang): npm install
+3. Jalankan development server: npm run dev
+4. Akses Project:
+Buka browser dan akses URL lokal yang muncul di terminal (default: http://localhost:5173)  
 
 
    
