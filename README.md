@@ -33,7 +33,8 @@ Project ini dibagi menjadi dua bagian sesuai instruksi praktikum:
 Bagi asisten praktikum atau dosen yang ingin mengeksekusi project React ini di komputer lokal, silakan ikuti langkah-langkah berikut:
 
 1. Buka terminal dan masuk ke direktori React:
-   ```bash
+   bash
+   cd praktikum-react
 
 2. Install semua dependencies (pastikan Node.js sudah terpasang):
 Bash
