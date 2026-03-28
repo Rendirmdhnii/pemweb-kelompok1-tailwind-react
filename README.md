@@ -5,10 +5,10 @@ Repository ini berisi hasil pengerjaan **Exercise 1** dan **Praktikum** mengenai
 ## 👥 Anggota Tim Pengembang
 
 Tugas ini dikerjakan secara kolaboratif oleh:
-- Sofyan Muzakki (253140707111087) - Ketua Kelompok
-- Muhammad Rendy Ramadhani (253140707111058)
-- Krisna Aji (253140707111078)
-- Desbelion Seccar Ramis (253140707111074)
+- Sufyan Muzakki Hafiansyah (253140707111087) - Ketua Kelompok
+- Muhammad Rendy Ramadhani  (253140707111058)
+- Krisna Aji Dharma Jati    (253140707111078)
+- Desbelion Seccar Ramis    (253140707111074)
 
 ---
 
