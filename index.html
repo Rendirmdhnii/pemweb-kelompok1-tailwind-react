@@ -3,61 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum Pemrogaman Web - Kelompok 1</title>
+    <title>Tugas Praktikum Pemrograman Web - Kelompok 1</title>
 
-    <!-- Iki nggowo Bootstrap teko CDN rek, ben gampang -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Iki gawe nyeluk Tailwind CSS nang njero script, dadi gak usah install ribet-ribet sek -->
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<!-- Background e nggawe Tailwind (bg-gray-200), trus di-center kabeh posisine ndek tengah layar -->
-<body class="bg-gray-200 min-h-screen flex items-center justify-center p-5">
+<body class="bg-slate-200">
 
-    <!-- Bungkusane nggawe Tailwind, ben rapi dadi koyok kartu trus onok bayangane (shadow-lg) -->
-    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-2xl">
+    <!-- Membungkus seluruh halaman agar berada di tengah (Tailwind Flexbox) -->
+    <div class="min-h-screen flex items-center justify-center p-4">
         
-        <!-- Judule rek, nggawe werno biru trus dikei garis ngisor (border-b) -->
-        <h2 class="text-3xl font-bold text-center text-blue-700 mb-6 border-b pb-4">
-            Tugas Praktikum Pemrograman Web
-        </h2>
-
-        <!-- Iki form gawe nggoleki data, nggawe campurane layout Tailwind ambek form Bootstrap -->
-        <form class="mb-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
-            <h4 class="mb-3 text-lg font-semibold text-gray-800">Golek Data Mahasiswa</h4>
-            <div class="mb-3">
-                <label for="cari" class="form-label font-medium text-gray-600">Lebokno Jeneng utowo NIM</label>
-                <!-- Class form-control iki asline teko Bootstrap cak -->
-                <input type="text" class="form-control" id="cari" placeholder="Ketik ndek kene...">
+        <!-- Container utama -->
+        <div class="grid gap-3 max-w-2xl w-full">
+            
+            <!-- Alert Bootstrap dengan animasi kedip (animate-pulse) -->
+            <div class="alert alert-info text-center shadow-sm font-semibold tracking-wide animate-pulse py-2 text-sm" role="alert">
+                Implementasi HTML + CDN Kelompok 1 T2F
             </div>
-            <!-- Tombole nggawe Bootstrap (btn btn-primary), tapi nek di-hover isok membesar titik gara-gara Tailwind -->
-            <button type="submit" class="btn btn-primary hover:scale-105 transition-transform">
-                Golek Data
-            </button>
-        </form>
 
-        <!-- Ndek kene panggonane nampilno jeneng-jenenge arek kelompok 1 seng paling mbois -->
-        <h4 class="mb-3 text-lg font-semibold text-gray-800">Arek-arek Kelompok 1:</h4>
-        
-        <!-- List iki nggawe list-group teko Bootstrap -->
-        <ul class="list-group">
-            <!-- Saben baris di-setting nek kenek mouse (hover) malih dadi biru muda -->
-             <li class="list-group-item hover:bg-blue-50 transition-colors">
-                <span class="font-bold">Sufyan Muzakki Hafiansyah</span> - 253140707111087
-            </li>
-            <li class="list-group-item hover:bg-blue-50 transition-colors">
-                <span class="font-bold">Muhammad Rendy Ramadhani</span> - 253140707111058
-            </li>
-            <li class="list-group-item hover:bg-blue-50 transition-colors">
-                <span class="font-bold">Krisna Aji Dharma Jati</span> - 253140707111078
-            </li>
-            <li class="list-group-item hover:bg-blue-50 transition-colors">
-                <span class="font-bold">Desbelion Seccar Ramis</span> - 253140707111074
-            </li>
+            <!-- Bootstrap Card dengan shadow dan border-radius -->
+            <div class="card shadow-lg rounded-2xl overflow-hidden border-0">
+                
+                <!-- Header Card Gelap (bg-dark) -->
+                <div class="card-header bg-dark text-white text-center py-2 text-lg font-bold">
+                    Profil Mahasiswa Kelompok 1
+                </div>
+                
+                <div class="card-body p-5">
+                    
+                    <!-- Grid Tailwind untuk membagi 4 kotak nama -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        
+                        <!-- KOTAK JENENG 1 (SOFYAN - KETUA) -->
+                        <div class="p-3 border rounded-xl bg-blue-50 hover:-translate-y-1 hover:scale-105 hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <h5 class="text-lg text-blue-700 font-bold mb-1">Sufyan Muzakki Hafiansyah</h5>
+                            <h6 class="text-xs text-gray-600 font-medium">NIM: 253140707111087</h6>
+                            <span class="badge bg-primary mt-1 shadow-sm">Ketua Kelompok</span>
+                        </div>
 
-        </ul>
+                        <!-- KOTAK JENENG 2 (RENDY) -->
+                        <div class="p-3 border rounded-xl bg-gray-50 hover:-translate-y-1 hover:scale-105 hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <h5 class="text-lg text-blue-600 font-bold mb-1">Muhammad Rendy Ramadhani</h5>
+                            <h6 class="text-xs text-gray-500 font-medium">NIM: 253140707111058</h6>
+                            <span class="badge bg-secondary mt-1 shadow-sm">Anggota</span>
+                        </div>
 
+                        <!-- KOTAK JENENG 3 (KRISNA) -->
+                        <div class="p-3 border rounded-xl bg-gray-50 hover:-translate-y-1 hover:scale-105 hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <h5 class="text-lg text-blue-600 font-bold mb-1">Krisna Aji Dharma Jati</h5>
+                            <h6 class="text-xs text-gray-500 font-medium">NIM: 253140707111078</h6>
+                            <span class="badge bg-secondary mt-1 shadow-sm">Anggota</span>
+                        </div>
+
+                        <!-- KOTAK JENENG 4 (DESBELION) -->
+                        <div class="p-3 border rounded-xl bg-gray-50 hover:-translate-y-1 hover:scale-105 hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <h5 class="text-lg text-blue-600 font-bold mb-1">Desbelion Seccar Ramis</h5>
+                            <h6 class="text-xs text-gray-500 font-medium">NIM: 253140707111074</h6>
+                            <span class="badge bg-secondary mt-1 shadow-sm">Anggota</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Garis pemisah -->
+                    <hr class="my-4 border-gray-300">
+                    
+                    <!-- Teks deskripsi -->
+                    <p class="card-text text-gray-700 leading-relaxed text-center px-2 text-sm">
+                        Tugas Praktikum Pemrograman Web: Implementasi penggabungan framework Bootstrap (untuk komponen Card, Alert, dan Badge) dengan Tailwind CSS (untuk layouting dan animasi) pada environment HTML Statis (CDN).
+                    </p>
+                    
+                    <!-- Tombol Selesai -->
+                    <button class="btn btn-primary mt-4 w-full rounded-full transition-transform hover:scale-105 shadow-sm py-1.5 font-bold text-base">
+                        Selesai
+                    </button>
+                    
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <!-- Bootstrap JS (Untuk interaksi jika dibutuhkan) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
